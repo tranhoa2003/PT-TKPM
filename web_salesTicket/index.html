@@ -56,13 +56,51 @@
                         <div class="block-user"></div>
                     </div>
                 </div>
-                <div class="slider-home">
-                    <div class="silde1">
-                        <a href="" >
-                            <img style="width: 100%;" src="https://www.cinestar.com.vn/pictures/z2161740555387_88fc044837bea7695ee9ec8320a39cef.jpg" alt="">
-                        </a>
+                <section id="Slider">
+                    <div class="aspect-ratio-169">
+                        <img src="https://www.cinestar.com.vn/pictures/z2161740555387_88fc044837bea7695ee9ec8320a39cef.jpg" alt="">
+                        <img src="https://www.cinestar.com.vn/pictures/z2161740545178_a8a9f7496b64b022c7303a779f958fc3.jpg" alt="">
+                        <img src="https://www.cinestar.com.vn/pictures/z2161740548307_572fb6880f511449ec1b78168c547d3b.jpg" alt="">
+                        <img src="https://www.cinestar.com.vn/pictures/z2161740555616_cf6d683f88aa9447af57b89917e84acb.jpg" alt="">
                     </div>
-                </div>
+                    <div class="dot-container">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </section>
+                <script>
+                    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+                    const imgContainer = document.querySelector('.aspect-ratio-169')
+                    const dotItem = document.querySelectorAll(".dot")
+                    let imgNuber = imgPosition.length
+                    let index = 0
+                    //console.log(imgPosition)
+                    imgPosition.forEach(function(image,index){
+                        image.style.left = index*100 + "%"
+                        dotItem[index].addEventListener("click", function(){
+                        slider (index)
+                        })
+                    })
+                    function imgSlide (){
+                        index++;
+                        console.log(index)
+                        if(index>=imgNuber){
+                            index=0
+                        }
+                        slider (index)
+                    }
+                    function slider (index){
+                        imgContainer.style.left = "-" +index*100+ "%"
+                        const dotActive = document.querySelector('.active')
+                        dotActive.classList.remove("active") 
+                        dotItem[index].classList.add("active")
+                
+                    }
+                    setInterval(imgSlide,5000)
+                
+                </script>
                 <div class="cart-content">
                     <div class="cart-wrap">
                         <div class="block-title">
@@ -232,7 +270,7 @@
                                         </div>
                                         <div class="slide-item" style="width: 361px;">
                                             <div class="promotion-item">
-                                                <a href="https://www.cinestar.com.vn/khuyenmai/c-monday">
+                                                <a href="">
                                                     <div class="promotion-pic">
                                                         <img class="lazyload" src="https://www.cinestar.com.vn/pictures/c_monday.jpg" style="display: block;">
                                                     </div>
@@ -240,7 +278,7 @@
                                             </div>
                                         </div>
                                         <div class="slide-item" style="width: 361px;"><div class="promotion-item">
-                                            <a href="https://www.cinestar.com.vn/khuyenmai/c-member">
+                                            <a href="">
                                                 <div class="promotion-pic">
                                                     <img class="lazyload" src="https://www.cinestar.com.vn/pictures/Hình%20nền%20CTKM/c'member.jpg" style="display: block;">
                                                 </div>
@@ -263,7 +301,7 @@
                             <div class="news-list" style="width: 1084px; margin-left: 116px;">
                                     <div class="news-row">       
                                         <div class="link-page link-page0" style="height: 186px;">
-                                        <a href="https://www.cinestar.com.vn/tintuc/rapphimcinestartuyennhanvienpartime"></a>
+                                        <a href=""></a>
                                         <div class="pic"><img src="https://www.cinestar.com.vn/pictures/Tin%20tức/c'hunt.jpg" alt="RẠP PHIM CINESTAR TUYỂN NHÂN VIÊN PARTIME "></div>
                                         <div class="txt">
                                             <h3>RẠP PHIM CINESTAR TUYỂN NHÂN VIÊN PARTIME </h3>
@@ -271,7 +309,7 @@
                                         </div>
                                     </div>
                                     <div class="link-page link-page1" style="height: 186px;">
-                                        <a href="https://www.cinestar.com.vn/tintuc/cinestarlamdongductrongtuyendungnhansu"></a>
+                                        <a href=""></a>
                                         <div class="pic">
                                             <img src="https://www.cinestar.com.vn/pictures/tuyỂn-dỤng-Đt-ld-.png" alt="CINESTAR LÂM ĐỒNG (ĐỨC TRỌNG) - TUYỂN DỤNG NHÂN SỰ">
                                         </div>
@@ -283,7 +321,7 @@
                                                                                                 </div>                            
                                     <div class="news-row">
                                         <div class="link-page link-page2" style="height: 186px;">
-                                        <a href="https://www.cinestar.com.vn/tintuc/MissPetiteVietnam2023"></a>
+                                        <a href=""></a>
                                         <div class="pic"><img src="https://www.cinestar.com.vn/pictures/Tin%20tức/cinestar-da-lat-1.jpeg" alt="Chung kết Hoa hậu Nhân ái Việt Nam 2023 sẽ diễn ra tại Đà Lạt"></div>
                                         <div class="txt">
                                             <h3>CHUNG KẾT HOA HẬU NHÂN ÁI VIỆT NAM 2023 SẼ DIỄN RA TẠI ĐÀ LẠT</h3>
@@ -291,7 +329,7 @@
                                         </div>
                                     </div>
                                         <div class="link-page link-page3" style="height: 186px;">
-                                        <a href="https://www.cinestar.com.vn/tintuc/nangluongmatroi-cinestarhue"></a>
+                                        <a href=""></a>
                                         <div class="pic"><img src="https://www.cinestar.com.vn/pictures/Tin%20tức/Nangluongmattroi/cinestar-hue.jpg" alt="CÓ THỂ BẠN CHƯA BIẾT CINESTAR HUẾ ĐANG SỬ DỤNG 100% ĐIỆN NĂNG LƯỢNG MẶT TRỜI"></div>
                                         <div class="txt">
                                             <h3>CÓ THỂ BẠN CHƯA BIẾT CINESTAR HUẾ ĐANG SỬ DỤNG 100% ĐIỆN NĂNG LƯỢNG MẶT TRỜI</h3>
@@ -339,31 +377,31 @@
                 
                                 <h2>CINESTAR</h2>
                                 <ul>
-                                                        <li data-name="212_2"><a href="https://www.cinestar.com.vn/phimdangchieu">Phim đang chiếu</a></li>
-                                                        <li data-name="212_1"><a href="https://www.cinestar.com.vn/phimsapchieu">Phim sắp chiếu</a></li>
-                                                        <li data-name="212_3"><a href="https://www.cinestar.com.vn/suatchieudacbiet">Suất chiếu đặc biệt</a></li>
-                                                        <li data-name="213"><a href="https://www.cinestar.com.vn/lichchieu">Lịch chiếu</a></li>
-                                                        <li data-name="211"><a href="https://www.cinestar.com.vn/khuyenmai">Khuyến mãi</a></li>
+                                                        <li data-name="212_2"><a href="">Phim đang chiếu</a></li>
+                                                        <li data-name="212_1"><a href="">Phim sắp chiếu</a></li>
+                                                        <li data-name="212_3"><a href="">Suất chiếu đặc biệt</a></li>
+                                                        <li data-name="213"><a href="">Lịch chiếu</a></li>
+                                                        <li data-name="211"><a href="">Khuyến mãi</a></li>
                                                     </ul>
                             </div>
                 
                             <div class="info">
                                 <h2>Thông tin</h2>
                                 <ul>
-                                                        <li data-name="207"><a href="https://www.cinestar.com.vn/gioithieu">Giới thiệu</a></li>
-                                                        <li data-name="209"><a href="https://www.cinestar.com.vn/tintuc">Tin tức</a></li>
-                                                        <li data-name="210"><a href="https://www.cinestar.com.vn/hoivadap">Hỏi và đáp</a></li>
-                                                        <li data-name="118"><a href="https://www.cinestar.com.vn/lienhe">Liên hệ</a></li>
+                                                        <li data-name="207"><a href="">Giới thiệu</a></li>
+                                                        <li data-name="209"><a href="">Tin tức</a></li>
+                                                        <li data-name="210"><a href="">Hỏi và đáp</a></li>
+                                                        <li data-name="118"><a href="">Liên hệ</a></li>
                                                     </ul>
                             </div>
                 
                             <div class="info terms_and_condition">
                                 <h2>CHÍNH SÁCH VÀ QUY ĐỊNH</h2>
                                 <ul>
-                                                        <li><a href="javascript:void(0);" data-name="terms_and_condition_2">Quy định chung</a></li>
-                                                        <li><a href="javascript:void(0);" data-name="terms_and_condition_3">Điều khoản giao dịch</a></li>
-                                                        <li><a href="javascript:void(0);" data-name="terms_and_condition_4">Chính sách bảo mật</a></li>
-                                                        <li><a href="javascript:void(0);" data-name="terms_and_condition_5">Thông tin công ty</a></li>
+                                                        <li><a href="" data-name="terms_and_condition_2">Quy định chung</a></li>
+                                                        <li><a href="" data-name="terms_and_condition_3">Điều khoản giao dịch</a></li>
+                                                        <li><a href="" data-name="terms_and_condition_4">Chính sách bảo mật</a></li>
+                                                        <li><a href="" data-name="terms_and_condition_5">Thông tin công ty</a></li>
                                                     </ul>
                             </div>
                 
@@ -373,11 +411,11 @@
                 
                     <div class="bottom-nav-icon">
                         <ul>
-                                        <li><a href="javascript:void(0);" data-name="1"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/dolby2.png" align="DOBLY ATMOS - CÔNG NGHỆ ÂM THANH MỚI MANG TÍNH ĐỘT PHÁ"></a></li>
-                                        <li><a href="javascript:void(0);" data-name="2"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/crhistie.png" align="Máy chiếu CHRISTIE"></a></li>
-                                        <li><a href="javascript:void(0);" data-name="3"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/2d.jpg" align="Công nghệ chiếu phim 2D Digital"></a></li>
-                                        <li><a href="javascript:void(0);" data-name="4"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/3d.png" align="Công nghệ chiếu phim 3D Digital"></a></li>
-                                        <li><a href="javascript:void(0);" data-name="5"><img src="https://www.cinestar.com.vn/pictures/webimages/Coffee/cinestar-coffee-02.png" align="Cinestar Coffee"></a></li>
+                                        <li><a href="" data-name="1"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/dolby2.png" align="DOBLY ATMOS - CÔNG NGHỆ ÂM THANH MỚI MANG TÍNH ĐỘT PHÁ"></a></li>
+                                        <li><a href="" data-name="2"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/crhistie.png" align="Máy chiếu CHRISTIE"></a></li>
+                                        <li><a href="" data-name="3"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/2d.jpg" align="Công nghệ chiếu phim 2D Digital"></a></li>
+                                        <li><a href="" data-name="4"><img src="https://www.cinestar.com.vn/pictures/moi/8DinhDang/3d.png" align="Công nghệ chiếu phim 3D Digital"></a></li>
+                                        <li><a href="" data-name="5"><img src="https://www.cinestar.com.vn/pictures/webimages/Coffee/cinestar-coffee-02.png" align="Cinestar Coffee"></a></li>
                                     </ul>
                     </div>
                 
@@ -388,10 +426,10 @@
             <div class="payment">
                 <h2>Chấp nhận thanh toán</h2>
                 <ul>
-                            <li><a href="javascript:void(0);"><img src="https://www.cinestar.com.vn/pictures/cache/webimages/9Rest/1Logo/napas-40.png" alt="Thẻ thanh toán nội địa"></a></li>
-                            <li><a href="javascript:void(0);"><img src="https://www.cinestar.com.vn/pictures/moi/ThanhToan/payment-visa.png" alt="Visa"></a></li>
-                            <li><a href="javascript:void(0);"><img src="https://www.cinestar.com.vn/pictures/moi/ThanhToan/payment-mastercard.png" alt="mastercard"></a></li>
-                            <li><a href="javascript:void(0);"><img src="https://www.cinestar.com.vn/pictures/webimages/momo.jpg" alt="Ví MoMo"></a></li>
+                            <li><a href=""><img src="https://www.cinestar.com.vn/pictures/cache/webimages/9Rest/1Logo/napas-40.png" alt="Thẻ thanh toán nội địa"></a></li>
+                            <li><a href=""><img src="https://www.cinestar.com.vn/pictures/moi/ThanhToan/payment-visa.png" alt="Visa"></a></li>
+                            <li><a href=""><img src="https://www.cinestar.com.vn/pictures/moi/ThanhToan/payment-mastercard.png" alt="mastercard"></a></li>
+                            <li><a href=""><img src="https://www.cinestar.com.vn/pictures/webimages/momo.jpg" alt="Ví MoMo"></a></li>
                         </ul>
             </div>
             
