@@ -4,6 +4,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .header{
     background-color:rgba(189, 23, 189, 0.58);
     height:127px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.container{
+    position: relative;
+    padding-top: 130px;
 }
 
 .logo-mb{
