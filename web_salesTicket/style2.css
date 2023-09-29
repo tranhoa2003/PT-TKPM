@@ -1,0 +1,90 @@
+.movie-calender{
+    border: 0;
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
+    background-color: #bb1dda;
+  }
+  .movie-calender .cinemas .cinema {
+    padding: 40px 100px;
+  }
+  .cinema h1{
+    text-align: center;
+    font-size: +50px;
+  }
+  .movie-calender label{
+    font-size: +40px;
+  }
+  .movie-calender .cinemas .cinema select{
+    width: 100px;
+    height: 40px;
+    border-radius: 20%;
+    text-align: center;
+  }
+.movie-calender .describe{
+  padding-bottom: 50px;
+  position: relative;
+  border: 0;
+  width: 95%;
+  word-wrap: break-word;
+  margin: 40px 50px;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+}
+.movie-calender .describe .detail{
+  text-indent: 30px;
+}
+
+.movie-calender .movie-poster{
+    border: 0;
+    min-width: 30px;
+    width: auto;
+    height: auto;
+    min-height: 170px;
+    float: left;
+    border-right: 4px solid black;
+}
+.movie-poster img{
+    position: absolute;
+    float: left;
+    left: 0;
+    width: fit-content;
+    width: 200px;
+    height: 300px;
+}
+.movie-calender .describe .movie-poster h1, .detail{
+    margin-left: 250px ;
+    width: 300px;
+    background-color: rgba(152, 24, 24, 0.7);
+}
+.describe .time ul{
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+}
+.describe .time ul li{
+    padding: 10px 10px;
+    border: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #d1d1d1;
+    margin-right: 2px;
+}
+.describe .time li:hover{
+    background-color: #0d07bb;
+}
+.describe .time li a{
+    text-decoration: none;
+    color: #000;
+}
+.describe .time li a:hover{
+    color: white;
+}
+.book-ticket{
+  border: 0;
+  width: 85%;
+  height: 200px;
+  background-color: rgb(128, 93, 47);
+  margin: 50px 50px ;
+}
