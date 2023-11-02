@@ -1,0 +1,131 @@
+.movie-calender {
+    border: 0;
+    width: 100%;
+    height: fit-content;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cinemas .cinema {
+    padding: 40px 100px;
+}
+
+.cinema h1 {
+    text-align: center;
+    font-size: +50px;
+}
+
+.movie-calender label {
+    font-size: 40px;
+}
+
+.mainBor {
+    width: 2000px;
+}
+
+.cinemas .cinema select {
+    width: fit-content;
+    height: 40px;
+    border-radius: 0px 30px 30px 20px;
+    background-color: #171717e2;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie-calender .describe {
+    padding-bottom: 50px;
+    position: relative;
+    border: 0;
+    width: 1400px;
+    word-wrap: break-word;
+    margin: 40px 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+}
+
+.movie-calender .describe .detail {
+    text-indent: 30px;
+}
+
+.dieuchinh {
+    display: flex;
+    justify-content: center;
+}
+
+.describe {
+    background-color: hsl(336, 56%, 47%);
+    padding: 20px 20px;
+}
+
+.movie-calender .movie-poster {
+    border: 0;
+    min-width: 30px;
+    width: 600px;
+    height: 300px;
+    min-height: 170px;
+    float: left;
+    border: 0;
+    background-color: chocolate;
+    padding: 30px 10px;
+    overflow: hidden;
+}
+
+.movie-poster img {
+    position: absolute;
+    float: left;
+    left: 0;
+    width: fit-content;
+    width: 200px;
+    height: 300px;
+    padding-left: 10px;
+}
+
+.movie-calender .describe .movie-poster h1,
+.detail {
+    margin-left: 250px;
+    width: 300px;
+    padding-top: 10px;
+    color: white;
+}
+
+.describe .time ul {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+}
+
+.describe .time ul li {
+    padding: 10px 10px;
+    border: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #d1d1d1;
+    margin-right: 2px;
+}
+
+.describe .time li:hover {
+    background-color: #0d07bb;
+}
+
+.describe .time li {
+    text-decoration: none;
+    color: #000;
+}
+
+.describe .time a li:hover {
+    color: white;
+}
+
+.book-ticket {
+    border: 0;
+    width: 85%;
+    height: 200px;
+    background-color: rgb(128, 93, 47);
+    margin: 50px 50px;
+}

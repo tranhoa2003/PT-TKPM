@@ -1,0 +1,225 @@
+    .image-slider {
+        width: 1060px;
+        margin-left: 200px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .morong_morongx1 {
+        background-color: orange;
+        padding-bottom: 5px;
+    }
+    
+    .image-item {
+        padding: 0 10px;
+        position: relative;
+    }
+    
+    .image {
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .image img {
+        position: relative;
+        top: 12px;
+        width: 193px;
+        height: 80%;
+        object-fit: cover;
+    }
+    
+    .image-title h3 {
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        top: 80%;
+        width: 190px;
+    }
+    
+    .image-title {
+        width: 100%;
+    }
+    
+    .icon-2d img {
+        position: absolute;
+        bottom: 1px;
+        left: 42%;
+    }
+    
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        margin: -60px;
+        transform: translateY(-50%);
+        border: none;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        font-size: 20px;
+        line-height: 1;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        background: url("images/icon_start.png") no-repeat center center;
+        background-color: #79013f;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+    
+    .slick-trang {
+        position: absolute;
+        top: 50%;
+        margin: -60px;
+        transform: translateY(-50%);
+        border: none;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        font-size: 20px;
+        line-height: 1;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        background: url("images/icon_start.png") no-repeat center center;
+        background-color: #dddd;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+    
+    .slick-arrow:hover {
+        background-color: #2cccff;
+        color: white;
+        box-shadow: 0 0 60px rgb(0 0 0 / 20%);
+    }
+    
+    .slick-prev {
+        left: -10px;
+        top: 200px;
+    }
+    
+    .slick-next {
+        right: -10px;
+        top: 200px;
+    }
+    
+    .slick-dots button {
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #eee;
+        border: none;
+        outline: none;
+        transition: all 0.2s linear;
+    }
+    
+    .slick-dots .slick-active button {
+        background-color: #2cccff;
+    }
+    
+    .phimdangchieu p {
+        text-align: center;
+        padding-top: 7%;
+        font-weight: bold;
+        color: white;
+        font-size: 27px;
+    }
+    
+    .manden {
+        border: 0;
+        color: white;
+        width: 190px;
+        padding: 3px 10px;
+        height: 360px;
+        background-color: #232323d0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        opacity: 0;
+        /* Bắt đầu với opacity 0 */
+        transition: all 0.9s ease;
+        /* Thêm hiệu ứng transition */
+        border: 2px solid white;
+    }
+    
+    .manden a,
+    .manden p {
+        margin-top: 10px;
+        padding: 12px;
+        text-align: center;
+    }
+    
+    .manden .detailks {
+        height: 180px;
+        overflow-y: hidden;
+    }
+    
+    .manden a p {
+        position: absolute;
+        bottom: 150px;
+        border: 0;
+        width: fit-content;
+        background-color: #eb1c6f;
+        padding: 5px 10px;
+        border-radius: 20px 20px;
+        right: 66px;
+    }
+    
+    .manden p:last-child:hover {
+        background-color: #f18720;
+    }
+    
+    .manden h3:hover {
+        background-color: #f18720;
+    }
+    
+    .manden a .xem-trailer:hover {
+        background-color: #eb1c6f;
+    }
+    
+    .manden h3 {
+        position: absolute;
+        bottom: 35px;
+        right: 43px;
+        border: 0;
+        width: fit-content;
+        background-color: #eb1c6f;
+        padding: 15px 60px 15px 10px;
+        border-radius: 20px 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    
+    .manden a .xem-trailer {
+        position: absolute;
+        bottom: 80px;
+        right: 20%;
+        border: 0;
+        width: fit-content;
+        background-color: #f18720;
+        padding: 15px 15px;
+        border-radius: 20px 20px;
+        font-size: 14px;
+    }
+    
+    .image-item:hover .manden {
+        display: block;
+        z-index: 3;
+        position: absolute;
+        opacity: 1;
+    }
+    
+    .image:hover .manden {
+        opacity: 1;
+        /* Khi hover, opacity sẽ chuyển sang 1 */
+    }
+    
+    .manden img {
+        width: 50px;
+        height: 50px;
+        background-color: #f18720;
+        border-radius: 50%;
+        position: absolute;
+        right: 12%;
+        bottom: 9%;
+    }

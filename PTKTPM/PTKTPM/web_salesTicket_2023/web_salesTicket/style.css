@@ -1,0 +1,3153 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 127px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+
+/* body{
+    overflow-x: hidden;
+    background: url('https://cinestar.com.vn/catalog/view/theme/default/images/bg-body.png');
+} */
+
+body {
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    overflow: hidden;
+    overflow-y: auto;
+    background: url('https://cinestar.com.vn/catalog/view/theme/default/images/bg-body.png') repeat-y left top;
+    background-size: contain;
+    /* -webkit-background-size:contain; */
+}
+
+.container {
+    position: relative;
+    padding-top: 130px;
+}
+
+
+/* ------------------Logo-mb-------------------------------------------------------------- */
+
+.logo-mb {
+    position: absolute;
+    top: 18px;
+    left: 47px;
+}
+
+.logo-mb img {
+    width: 211px;
+    height: 84px;
+}
+
+.facilities-nav {
+    text-align: right;
+}
+
+
+/* ------------------navigation--------------------------------- */
+
+.navigation {
+    position: relative;
+    text-align: right;
+    padding-left: 30%;
+    padding-top: 10px;
+}
+
+.navigation .nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation .nav ul li a h1 {
+    font-weight: bold;
+    margin: 10px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+}
+
+.navigation .nav {
+    border: 1px solid #e00d7a;
+    background: #f30a7a;
+    border-radius: 20px;
+    height: 43px;
+    width: fit-content;
+    outline: 1px solid #e00d7a;
+    outline-offset: 3px;
+    z-index: 1;
+    margin-top: -16px;
+}
+
+.navigation .nav li {
+    text-align: center;
+    position: relative;
+    padding-left: 7px;
+}
+
+.navigation .nav li:hover {
+    background-color: orange;
+    height: 43px;
+    transition: all 0.7s ease;
+}
+
+.navigation .nav .mau {
+    background-color: orange;
+    border-radius: 20px 0 0 20px;
+    height: 43px;
+}
+
+.navigation .nav .mau2 {
+    background-color: orange;
+    border-radius: 0px 20px 20px 0px;
+    height: 43px;
+}
+
+.navigation .nav .mau1 {
+    background-color: orange;
+    height: 43px;
+}
+
+.navigation .nav li:hover:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.navigation .nav li:hover:last-child {
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+/* ------------search--------------------------------------------- */
+
+.search {
+    position: absolute;
+    top: 11px;
+    right: 88px;
+    width: 55px;
+    height: 42px;
+    background: url('https://cinestar.com.vn/catalog/view/theme/default/images/icon-search.png') no-repeat center center;
+    text-indent: 9999px;
+}
+
+.form-row-search {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+.search-field {
+    width: 271px;
+    height: 42px;
+    border-radius: 30px;
+    border: none;
+    background-color: #000;
+    color: #d1d1d1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 18px;
+    position: relative;
+    right: 88px;
+    top: 11px;
+}
+
+
+/* --------------------------ngôn ngữ------------------- */
+
+.facilities-nav form a {
+    text-decoration: none;
+    position: relative;
+    top: -34px;
+    right: 33px;
+    background-color: #ba3469;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid hsl(336, 56%, 47%);
+    padding: 8px 7px;
+    font-weight: 700;
+    text-shadow: 2px 4px 0 rgb(0 0 0 / 10%);
+    transition: all 0.6s ease;
+}
+
+.facilities-nav form:hover>a {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+
+/* -----------------------link-home Ngôi nhà----------------------------- */
+
+.link-home.current {
+    background-position: center -45px;
+    pointer-events: none;
+}
+
+.link-home {
+    display: inline-block;
+    border-radius: 15px;
+    background: #e84a96;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 4px;
+    background: url('https://cinestar.com.vn/catalog/view/theme/default/images/icon-home.png') no-repeat center -5px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 50px;
+    height: 39px;
+    text-decoration: none;
+    position: absolute;
+    left: 25%;
+    margin-top: -16px;
+    background-position: center 1px;
+}
+
+.link-home h1 {
+    display: none;
+}
+
+
+/* ---------------đăng ký--------------------------------------- */
+
+.register-content {
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background: url("https://marketplace.canva.com/EAErQm7MA7k/1/0/450w/canva-xanh-ng%E1%BB%8Dc-lam-m%E1%BB%81m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-l%E1%BB%9Di-kh%E1%BA%B3ng-%C4%91%E1%BB%8Bnh-tr%C3%ADch-d%E1%BA%ABn-chung-h%C3%ACnh-n%E1%BB%81n-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-6uQ_fR5qbHM.jpg");
+    border-bottom: 1px solid #fff;
+}
+
+.register-wrap {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+
+.register-wrap ul {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.register-wrap ul li.btn-register {
+    background: url("https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-register.png") no-repeat left 1px;
+    cursor: pointer;
+}
+
+.register-wrap ul li {
+    float: left;
+    margin-right: 30px;
+    overflow: hidden;
+}
+
+.register-wrap ul li.btn-login {
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-login.png) no-repeat left top;
+    cursor: pointer;
+}
+
+.register-wrap ul li a {
+    text-decoration: none;
+    padding: 25px 0 23px 71px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e00d7a;
+}
+
+.register-wrap ul li a:hover {
+    color: orange;
+    height: 63px;
+    transition: all 0.5s ease;
+}
+
+.block-user-dk {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid red;
+    padding: 44px;
+    top: 65px;
+    left: -60px;
+    z-index: 1;
+    width: 550px;
+}
+
+.icon-dk {
+    margin-top: -61px;
+    margin-left: 140px;
+}
+
+.block-user-dk>p {
+    font-size: 1em;
+    font-style: italic;
+    color: gray;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.block-user-dk label {
+    display: block;
+    margin: 10px 0;
+}
+
+.block-user-dk button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.block-user-dk button:hover {
+    background-color: #0056b3;
+}
+
+.from-gender {
+    display: flex;
+    /* Sử dụng flexbox để các phần tử con nằm cùng hàng */
+    align-items: center;
+    /* Các phần tử con được căn giữa theo chiều dọc */
+}
+
+.from-gender1 {
+    display: flex;
+    /* Sử dụng flexbox cho từng phần tử radio button và nhãn */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    padding-left: 14px;
+}
+
+.from-gender1 label {
+    color: red;
+    margin-right: 8px;
+    /* Tạo khoảng cách giữa nhãn và radio button */
+}
+
+.from-gender1 input[type="radio"] {
+    margin-right: 36px;
+    /* Tạo khoảng cách giữa radio button và nhãn */
+}
+
+.from-gender1 input:checked~.button-gender {
+    background: url('http://cinestar.com.vn/catalog/view/theme/default/images/icon-radio-active.png') no-repeat center bottom;
+}
+
+.button-gender {
+    display: inline-block;
+    width: 26px;
+    height: 30px;
+    background: url('http://cinestar.com.vn/catalog/view/theme/default/images/icon-radio.png') no-repeat center bottom;
+    vertical-align: top;
+    pointer-events: none;
+    margin-left: -53px;
+}
+
+.input-ten {
+    float: left;
+    width: 45%;
+}
+
+.input-ngaysinh {
+    float: right;
+    width: 45%;
+}
+
+.input-diachi {
+    clear: both;
+    margin: 10px 0;
+}
+
+.input-cmnd {
+    float: left;
+    width: 45%;
+}
+
+.input-dienthoai {
+    float: right;
+    width: 45%;
+}
+
+.input-email {
+    float: right;
+    width: 45%;
+}
+
+.input-tendangnhap {
+    clear: both;
+}
+
+.input-matkhau {
+    float: left;
+    width: 45%;
+}
+
+.input-nhaplaimatkhau {
+    float: right;
+    width: 45%;
+}
+
+.form-input {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.input-thongtin {
+    margin-bottom: 10px;
+}
+
+.input-thongtin input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 20px;
+    box-shadow: 3px 3px 0 rgb(0 0 0 / 10%);
+    border-radius: 25px;
+    color: gray;
+}
+
+.input-fix p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+    padding-top: 18px;
+}
+
+
+/* -------------------dang-nhap------------- */
+
+.block-user-dn {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 43px;
+    top: 65px;
+    left: 180px;
+    z-index: 1;
+}
+
+.block-user-dn p {
+    text-align: center;
+    color: gray;
+    padding: 10px 0;
+    font-style: italic;
+}
+
+.input-nguoidung {
+    position: relative;
+}
+
+.input-nguoidung input {
+    padding-left: 44px;
+}
+
+.input-nguoidung img {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+
+.input-matkhauchinh {
+    position: relative;
+}
+
+.input-matkhauchinh input {
+    padding-left: 44px;
+}
+
+.input-matkhauchinh img {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+
+.button-dangnhap input {
+    padding: 22px;
+    font-size: 20px;
+    border-radius: 30px 30px 30px 0;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.button-dangnhap input:hover {
+    background-color: #e00d7a;
+}
+
+.form-input a {
+    position: absolute;
+    top: 186px;
+    right: 40px;
+    color: gray;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.form-input a:hover {
+    color: orange;
+}
+
+.hotline {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f37520;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-call.png) no-repeat left 7px;
+    padding: 15px 0 19px 58px;
+    text-decoration: none;
+}
+
+.hotline:hover {
+    color: #c90b68;
+    height: 28px;
+    transition: all 0.5s ease;
+}
+
+.cart-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url("https://marketplace.canva.com/EAErQm7MA7k/1/0/450w/canva-xanh-ng%E1%BB%8Dc-lam-m%E1%BB%81m-m%C3%A0u-n%C6%B0%E1%BB%9Bc-l%E1%BB%9Di-kh%E1%BA%B3ng-%C4%91%E1%BB%8Bnh-tr%C3%ADch-d%E1%BA%ABn-chung-h%C3%ACnh-n%E1%BB%81n-%C4%91i%E1%BB%87n-tho%E1%BA%A1i-6uQ_fR5qbHM.jpg");
+}
+
+.cart-wrap {
+    display: block;
+    width: 90%;
+    height: 135px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block-title {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: 100%;
+    line-height: 144px;
+    padding-left: 150px;
+}
+
+.block-title h2 {
+    font-family: 'Futurab';
+    font-weight: normal;
+    font-size: 36px;
+    color: #e00d7a;
+    line-height: 32px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 4px 4px 0 rgb(0 0 0 / 10%);
+    text-align: left;
+}
+
+.block-title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    width: 114px;
+    height: 130px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-ticket.png) no-repeat center center;
+}
+
+.block-list {
+    display: inline-block;
+    width: 70%;
+    margin-top: 12px;
+    max-width: 910px;
+    margin-left: 500px;
+}
+
+
+/* --------------select-list------------------ */
+
+.select-list {
+    position: relative;
+    height: 48px;
+    width: 290px;
+    margin: 0 5px 12px 5px;
+    display: inline-block;
+}
+
+
+/* .select-box:hover{
+    background-color: #c90b68;
+} */
+
+.select-list {
+    position: relative;
+    padding-top: 7px;
+}
+
+.select-box select {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    border-radius: 0 30px 30px 30px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.select-box select:hover {
+    background-color: #c90b68;
+}
+
+.select-box1 select:hover {
+    background-color: #c90b68;
+}
+
+.select-box2 select:hover {
+    background-color: #c90b68;
+}
+
+.select-box3 select:hover {
+    background-color: #c90b68;
+}
+
+.select-box1 select {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    border-radius: 30px 0px 30px 30px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.select-box2 select {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    border-radius: 30px 30px 30px 0px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.select-box3 select {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    border-radius: 30px 30px 0px 30px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-icon-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.nav-icon-wrap {
+    width: 90%;
+    max-width: 1300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.nav-icon-wrap li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+
+/* ---------------sub-tab----------------------------- */
+
+.sub-tab {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    height: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sub-tab ul {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    overflow: hidden;
+}
+
+.sub-tab li {
+    background: #f18720;
+    height: 74px;
+    float: left;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.sub-tab li.active a {
+    color: black;
+    /* Màu chữ khi được chọn */
+}
+
+.sub-tab li.active {
+    background-color: yellow;
+}
+
+.sub-tab li a {
+    font-family: 'avantgarde-demi';
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 74px;
+    transition: all 0.3s ease-in-out;
+    padding: 0 45px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.sub-tab li:nth-child(1) {
+    z-index: 3;
+    border-radius: 30px 50px 50px 0;
+}
+
+.sub-tab li:nth-child(1) a {
+    text-align: center;
+}
+
+.sub-tab li:nth-child(2) {
+    z-index: 2;
+    border-radius: 0 50px 50px 0;
+    -webkit-border-radius: 0 50px 50px 0;
+    padding-left: 11px;
+    margin-left: -80px;
+}
+
+.sub-tab li:nth-child(3) {
+    z-index: 1;
+    padding-left: 55px;
+    margin-left: -80px;
+    border-radius: 0 30px 0 0;
+    -webkit-border-radius: 0 30px 0 0;
+}
+
+#film-page .sub-tab,
+#film-details-page .sub-tab {
+    padding: 40px 0 15px 0;
+}
+
+#news-page .sub-tab,
+#news-detail-page .sub-tab {
+    padding-bottom: 20px;
+}
+
+.sub-tab li.current {
+    background: #fecf06;
+}
+
+.sub-tab li.current a {
+    pointer-events: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sub-tab li:not(.current):hover {
+    background: #fecf06;
+}
+
+.sub-tab li:not(.current):hover a {
+    color: #000;
+}
+
+.sub-tab ul li a {
+    position: relative;
+    left: -55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+/* General styles */
+
+.movie-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0 10px 0;
+}
+
+.movie-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 202px;
+    margin: 0 auto;
+}
+
+.movie-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+    pointer-events: none;
+}
+
+.movie-txt {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+}
+
+.movie-txt h3 {
+    font-family: 'Futurab';
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.movie-over {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #fbdbbd;
+    padding: 25px 20px;
+    text-align: center;
+    z-index: -1;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+
+/* -----------------ưu đãi */
+
+.promotion-content {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.promotion-title {
+    display: inline-block;
+    width: 96px;
+    height: 200px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-promotion.png) no-repeat left bottom;
+    vertical-align: top;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.promotion-title h2 {
+    font-family: 'avantgarde-demi';
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(270deg);
+    position: relative;
+    left: 30px;
+    top: 55px;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.promotion-pic {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+}
+
+.promotion-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 170px;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.promotion-item {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: auto;
+    max-width: 364px;
+    margin: 0 auto;
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 30px 0 30px 0;
+}
+
+.news-content {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 130px;
+    right: 550px;
+}
+
+.news-wrap {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.news-title {
+    display: inline-block;
+    width: 96px;
+    height: 236px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/iocn-news.png) no-repeat left bottom;
+    vertical-align: top;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+}
+
+.news-list {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+.news-title h2 {
+    font-family: 'avantgarde-demi';
+    font-weight: normal;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    position: relative;
+    left: 30px;
+    top: 40px;
+    white-space: nowrap;
+}
+
+.news-content .news-wrap .news-title {
+    position: absolute;
+    top: 189px;
+}
+
+.news-content .news-wrap .news-title h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.news-row {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.news-row .link-page2 {
+    position: relative;
+    top: -222px;
+}
+
+.news-row .link-page1 {
+    position: relative;
+    left: 623px;
+    top: -227px;
+}
+
+.news-row .link-page3 {
+    position: relative;
+    left: 623px;
+    top: -448px;
+}
+
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) {
+    background-color: #e00d7a;
+    border-radius: 0 30px 0 30px;
+    -webkit-border-radius: 0px 30px 0px 30px;
+    margin-left: 50px;
+}
+
+.news-list .link-page {
+    display: inline-block;
+    margin: 3px 1px;
+    vertical-align: top;
+}
+
+.link-page {
+    position: relative;
+    width: 49%;
+    height: 186px;
+    max-width: 556px;
+    padding: 18px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) .pic {
+    border-radius: 0 30px 0 0;
+}
+
+.news-list .news-row:nth-child(odd) .link-page:nth-child(odd) .pic img {
+    border-radius: 0 30px 0 0;
+}
+
+.news-list .news-row:nth-child(even) .link-page:nth-child(odd) {
+    background-color: #f37520;
+    border-radius: 30px 0 30px 0;
+    margin-left: 50px;
+}
+
+.news-list .news-row:nth-child(even) .link-page:nth-child(even) {
+    background-color: #e00d7a;
+    border-radius: 0 30px 0 30px;
+}
+
+.news-list .news-row:nth-child(odd) .link-page:nth-child(even) {
+    background-color: #f37520;
+    border-radius: 30px 0 30px 0;
+}
+
+.pic {
+    float: right;
+    width: auto;
+    height: 150px;
+    max-width: 270px;
+    overflow: hidden;
+    margin-left: 20px;
+    background: #fff;
+    border: 3px solid #fff;
+}
+
+.pic img {
+    height: 146px;
+    width: auto;
+    display: block;
+}
+
+.txt {
+    max-height: 140px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.txt h3 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 18px;
+}
+
+.bottom {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    padding-top: 46px;
+    background: url("images/ke.png") repeat-x center top;
+    background-repeat: no-repeat;
+}
+
+.bottom-nav {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.bottom-nav-icon {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.bottom-nav-icon ul {
+    position: relative;
+    width: auto;
+}
+
+.bottom-nav-icon ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.bottom-nav-icon ul li a {
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-nav-icon ul li a:hover {
+    opacity: 0.5;
+}
+
+.bottom-nav-icon ul li img {
+    pointer-events: none;
+}
+
+.logo-footer {
+    display: inline-block;
+    vertical-align: top;
+    width: 183px;
+    height: 92px;
+    background-image: url(https://www.cinestar.com.vn/pictures/cache/moi/9Logo/trang-100x100.png);
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bottom-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    text-align: right;
+    padding-top: 40px;
+}
+
+.bottom-wrap>div {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.bottom-wrap>div h2 {
+    padding: 8px 19px;
+    font-family: 'avantgarde-demi';
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.bottom-wrap>div ul {
+    width: auto;
+    max-width: 344px;
+}
+
+.bottom-wrap ul li {
+    margin-bottom: 10px;
+}
+
+.bottom-wrap ul li[data-name='schedule'] a {
+    pointer-events: auto !important;
+}
+
+.bottom-wrap ul li a {
+    font-family: 'MyriadLight';
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    text-transform: inherit;
+    color: #b3c4d5;
+    display: block;
+    line-height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-wrap ul li a:not(.current):hover {
+    color: #f37520;
+}
+
+.bottom-wrap ul li.current a {
+    color: #f37520;
+    pointer-events: none;
+}
+
+.social ul {
+    position: relative;
+    margin: 3px 0 10px 0;
+}
+
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-size: cover;
+    -webkit-background-size: cover;
+    text-indent: 9999px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.social ul li a:hover {
+    opacity: 0.5;
+}
+
+.social ul li a.facebook {
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/scl_facebook.png) no-repeat center center;
+}
+
+.social ul li a.youtube {
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/scl_youtube.png) no-repeat center center;
+}
+
+.hotline-tel {
+    display: block;
+    font-family: 'avantgarde';
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hotline-tel:hover {
+    color: #f37520;
+}
+
+.cinestart-price ul li {
+    list-style: none;
+}
+
+.cinestart-price ul li a {
+    text-decoration: none;
+}
+
+.cinestart ul li {
+    list-style: none;
+}
+
+.cinestart ul li a {
+    text-decoration: none;
+}
+
+.info ul li {
+    list-style: none;
+}
+
+.info ul li a {
+    text-decoration: none;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.payment {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    background: #fa2e91;
+}
+
+.payment h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #b3c4d5;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.payment ul {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.payment ul li {
+    display: inline-block;
+    margin: 0 2px 4px 2px;
+    vertical-align: middle;
+}
+
+.payment ul li a {
+    display: block;
+    line-height: 0;
+    font-family: none;
+    font-size: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.payment ul li a:hover {
+    opacity: 0.5;
+}
+
+.copyright {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 24px 20px;
+    background: #000;
+}
+
+.copyright h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.copyright h2 a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.copyright h2 a:hover {
+    color: #f2b819;
+}
+
+.copyright p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #919191;
+    text-align: center;
+    line-height: 14px;
+}
+
+.copyright p strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.copyright p a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #919191;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.copyright p a:hover {
+    color: #f2b819;
+}
+
+
+/* -------------slider---------------------- */
+
+#Slider {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#Slider-index {
+    border-bottom: 2px solid #000;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#Slider-index img {
+    height: 334px;
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 25%;
+    transition: 0.3s;
+}
+
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 328px;
+    top: 0;
+    left: 0;
+}
+
+.dot-container {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.dot-index {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    margin-left: 87%;
+    top: 400px;
+}
+
+.dot.active {
+    background-color: white;
+    outline: 1px solid white;
+    outline-offset: 4px;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.faq-content {
+    position: relative;
+}
+
+
+/* -----------------gửi câu hỏi----------------------------- */
+
+.section-title {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    z-index: 1;
+    top: -700px;
+}
+
+.section-title h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 36px;
+    position: relative;
+}
+
+.section-title1 {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-title1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.section-title2 {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.section-title2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.faq-wrap {
+    width: 90%;
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    z-index: 1;
+}
+
+.faq {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.faq ul {
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.faq li {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.faq li .ask {
+    display: table;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    border-radius: 0px 30px 0px 30px;
+    -webkit-border-radius: 0px 30px 0px 30px;
+    min-height: 76px;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq li .cycle-num {
+    font-family: 'Futurab';
+    font-weight: normal;
+    color: #ededed;
+    font-size: 24px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 80px;
+    text-align: center;
+}
+
+.faq li .ask h3 {
+    font-family: 'MyriadBold';
+    font-weight: normal;
+    color: #fff;
+    vertical-align: middle;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 50px 10px 0;
+    height: 76px;
+}
+
+.faq li .ask h3 span {
+    display: block;
+    width: 100%;
+    max-height: 76px;
+    overflow: hidden;
+    line-height: 26px;
+    font-size: 24px;
+}
+
+.faq li .ask .st-arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 38px;
+    margin-top: -15px;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.faq li .ask:hover {
+    background-color: #e00d7a;
+}
+
+.faq li .ask:hover .st-arrow {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.faq li.active .ask {
+    background-color: #e00d7a;
+}
+
+.faq li.active .ask .st-arrow {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.faq li .answer .cycle-num {
+    font-family: 'Futurab';
+    font-weight: normal;
+    color: #f37520;
+    font-size: 24px;
+    width: 140px;
+    min-width: 140px;
+    display: table-cell;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+
+/* --------------------faq-form--------------------- */
+
+.faq-form {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    z-index: 1;
+}
+
+.faq-form form {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.faq-form .name {
+    width: 100%;
+    float: none;
+}
+
+.faq-form .tel {
+    width: 46%;
+    float: left;
+}
+
+.faq-form .email {
+    width: 46%;
+    float: right;
+}
+
+.faq-form .input-text {
+    margin-bottom: 10px;
+}
+
+.faq-form .email input[type="text"] {
+    background-image: none;
+    padding: 0 20px;
+    margin-left: -25px;
+}
+
+.faq-form .input-text input[type="text"] {
+    color: #818181;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    width: 95%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+    border-radius: 22px;
+}
+
+.faq-form .input-text input[type="text"]:focus {
+    background-color: #e00d7a;
+    color: #fff;
+}
+
+.faq-form .input-but {
+    text-align: center;
+    margin-top: 44px;
+}
+
+.faq-form .input-but input {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px 30px 30px 0;
+}
+
+.faq-form .input-but>input:hover {
+    background-color: #c90b68;
+}
+
+.focus-text {
+    height: 44px;
+    line-height: 44px;
+}
+
+.input-area {
+    width: 100%;
+    height: 173px;
+    position: relative;
+    margin: 5px 0 0 0;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.input-area textarea {
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #818181;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    width: 96.5%;
+    height: 150px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.input-area textarea:focus {
+    opacity: 1;
+    background-color: #e00d7a;
+    color: #fff;
+}
+
+
+/*register*/
+
+.user-form.register {
+    padding: 30px 50px;
+    display: block;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS cho hiệu ứng khi câu trả lời được hiển thị */
+
+.answer.active {
+    display: block;
+}
+
+.news-tab-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 75px;
+}
+
+.news-tab-wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 77px;
+}
+
+#news {
+    position: relative;
+    margin: 0 auto;
+    width: 1169.96px;
+    height: 1800px;
+}
+
+.news-item {
+    background-color: rgba(255, 255, 255, 1);
+    width: 380px;
+    vertical-align: top;
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.news-bg {
+    padding: 13px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.news-bg:hover {
+    background-color: #e00d7a;
+}
+
+.view-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-indent: -9999px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.news-pic {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-pic img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    pointer-events: none;
+}
+
+.news-txt {
+    width: 94%;
+    padding: 16px 10px;
+    background-color: #fff;
+}
+
+.news-txt h3 {
+    font-family: 'MyriadBold';
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.news-txt p {
+    font-family: 'MyriadLight';
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    line-height: 18px;
+}
+
+.about-section {
+    position: relative;
+    width: 100%;
+    display: block;
+    transition: height 0.3s ease-in-out;
+    background: url('images/nen1.jpg') no-repeat center center;
+    background-size: 100%;
+    height: 1500px;
+}
+
+.about-top {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.about-box {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    height: auto;
+    white-space: nowrap;
+    margin: 0 auto;
+    /* text-align: center; */
+    margin-top: 30px;
+}
+
+.intro-wrap {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 60px;
+}
+
+.intro-item {
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+.intro-item:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    clear: both;
+}
+
+.intro-item h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+    text-transform: uppercase;
+    z-index: 1;
+    display: inline-block;
+    width: auto;
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+.intro-item:nth-child(odd) .intro-pic {
+    float: left;
+    margin-right: 30px;
+}
+
+.intro-item:nth-child(odd) h3 {
+    background-color: #e00d7a;
+    padding: 20px 30px 20px 120px;
+    border-radius: 0px 40px 0px 0px;
+    margin-left: -125px;
+    width: 260px;
+    padding-left: 75px;
+}
+
+.intro-item:nth-child(odd) .intro-txt {
+    padding: 95px 100px 0 0;
+    text-align: left;
+}
+
+.intro-item:nth-child(odd) .intro-txt p {
+    text-align: left;
+}
+
+.intro-item:nth-child(even) .intro-pic {
+    float: right;
+    margin-left: 30px;
+}
+
+.intro-item:nth-child(even) h3 {
+    background-color: #ba3469;
+    padding: 20px 100px 20px 10px;
+    text-align: right;
+    border-radius: 40px 0px 0px 0px;
+    margin-right: -125px;
+    width: 260px;
+}
+
+.intro-item:nth-child(even) .intro-txt {
+    padding: 95px 0 0 100px;
+    text-align: right;
+}
+
+.intro-item:nth-child(even) .intro-txt p {
+    text-align: right;
+}
+
+.intro-pic {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #fff;
+    line-height: 0;
+    z-index: 1;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.intro-txt {
+    display: block;
+}
+
+.intro-txt p {
+    font-family: 'MyriadRegular';
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.intro-note {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.intro-note p {
+    font-family: 'MyriadRegular';
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p.welcom {
+    position: relative;
+    display: inline-block;
+    font-family: 'MyriadBold';
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    font-style: italic;
+    padding: 0 60px;
+}
+
+p.welcom:before {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-welcome-bf.png) no-repeat center top;
+}
+
+p.welcom:after {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: url(https://www.cinestar.com.vn/catalog/view/theme/default/images/icon-welcome-af.png) no-repeat center top;
+}
+
+.cinema-img-wrap {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.cinema-img-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cinema-img-slide {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cinema-pic {
+    display: block;
+    width: 96%;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    max-width: 400px;
+    max-height: 267px;
+    margin: 10px 2px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 3px solid #5c1a55;
+    margin: 0 auto 15px auto;
+}
+
+.cinema-pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contact-info-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.contact-info-wrap {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: -700px;
+}
+
+.contact-info-wrap h3 {
+    font-family: 'Futurab';
+    font-weight: normal;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contact-info-wrap p {
+    font-family: 'MyriadRegular';
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.contact-info-wrap p strong {
+    font-family: 'MyriadBold';
+    font-weight: normal;
+    font-size: 24px;
+    color: #fff;
+}
+
+.contact-info-wrap p a {
+    color: #fff;
+}
+
+.contact-form {
+    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto 0px auto;
+    padding-bottom: 40px;
+}
+
+.service-wrap {
+    position: relative;
+    display: block;
+    width: 90%;
+    max-width: 1040px;
+    margin: 0 auto;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.khung {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    color: white;
+}
+
+.khung1 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    color: white;
+}
+
+.anh-khung img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.anh-khung {
+    float: right;
+    width: 39%;
+}
+
+.noidung {
+    float: left;
+    width: 59%;
+}
+
+
+/*--------------------------- Phim -----------------------------*/
+
+.content-movie {
+    border: 0;
+    width: 90%;
+    padding: 10px 10px;
+    height: auto;
+    min-height: 433px;
+    position: relative;
+    background-color: rgba(141, 173, 25, 0.642);
+    margin: 20px auto;
+}
+
+.content-movie img {
+    width: 297px;
+    height: 434px;
+    position: absolute;
+    left: 0;
+    float: left;
+}
+
+.content-movie .movie-content-lane {
+    margin-left: 30%;
+    color: #d1d1d1;
+    padding: 20px;
+}
+
+.content-movie .movie-content-lane p {
+    padding-top: 20px;
+}
+
+.content-movie button {
+    border: 1px solid;
+    width: 200px;
+    height: fit-content;
+    padding: 30px 30px;
+    margin-left: 30%;
+    margin-top: 15%;
+    border-radius: 50px 50px;
+    background-color: #c90b68;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: +30px;
+}
+
+.content-movie button:hover {
+    background-color: #f18720;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.movie-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 200px;
+    background-color: orange;
+    padding-top: 30px;
+}
+
+.movie-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 202px;
+    margin: 0 auto;
+}
+
+.movie-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+    pointer-events: none;
+}
+
+.movie-txt {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+}
+
+.movie-txt h3 {
+    font-family: 'Futurab';
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.slide-slidebox .slide-item {
+    position: relative;
+    width: 400px;
+}
+
+.news-content {
+    position: relative;
+    width: 300px;
+    height: 555px;
+}
+
+.news-list {
+    position: relative;
+    display: inline-block;
+    width: auto;
+}
+
+.social ul {
+    position: relative;
+    margin: 3px 0 10px 0;
+}
+
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-size: cover;
+    -webkit-background-size: cover;
+    text-indent: 9999px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.social ul li a:hover {
+    opacity: 0.5;
+}
+
+.hotline-tel {
+    display: block;
+    font-family: 'avantgarde';
+    font-weight: normal;
+    font-size: 30px;
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hotline-tel:hover {
+    color: #f37520;
+}
+
+.cinestart-price ul li {
+    list-style: none;
+}
+
+.cinestart-price ul li a {
+    text-decoration: none;
+}
+
+.cinestart ul li {
+    list-style: none;
+}
+
+.cinestart ul li a {
+    text-decoration: none;
+}
+
+.info ul li {
+    list-style: none;
+}
+
+.info ul li a {
+    text-decoration: none;
+}
+
+.chiTietPhim {
+    border: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #ffd904;
+    display: flex;
+}
+
+.chiTietPhim img {
+    width: 32%;
+    height: 70%;
+    margin: 40px 80px;
+    box-shadow: 0 7px 5px 7px rgba(57, 55, 55, 0.5);
+}
+
+.MoTa {
+    width: 47%;
+    height: 70%;
+    margin-top: 40px;
+    background-color: rgb(255, 166, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 30px;
+    border: 2px solid #333;
+    box-shadow: 0 7px 5px 7px rgba(57, 55, 55, 0.5);
+}
+
+.khoangCach {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    color: white;
+}
+
+.khoangCach .phanMot {
+    position: absolute;
+}
+
+.khoangCachInner {
+    display: flex;
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: space-between;
+    /* Căn cách hai phần */
+}
+
+.khoangCach .phan2 {
+    color: #000;
+    font-size: 20px;
+    margin-left: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: fit-content;
+    border: 0;
+    border-radius: 20px 0px 20px 0px;
+    background-color: white;
+}
+
+.rating {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    float: right;
+    cursor: pointer;
+    color: #3b3939;
+    margin-right: 5px;
+}
+
+.rating label:before {
+    content: "\2605";
+    /* Ký tự sao ngôi sao */
+    font-size: 24px;
+}
+
+.rating input:checked~label {
+    color: rgb(71, 79, 237);
+    /* Màu của sao đã chọn */
+}
+
+table,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 10px;
+}
+
+
+/* Điều chỉnh màu của sao khi di chuột qua */
+
+.rating label:hover {
+    color: #f90;
+}
+
+.LienKet {
+    display: flex;
+    margin: 20px 20px;
+}
+
+.LienKet a {
+    border: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(198, 2, 228, 0.866);
+    margin: 30px 30px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: #000;
+    box-shadow: 3px 5px 3px 0;
+}
+
+.LienKet a:hover {
+    background-color: yellow;
+    color: rgb(40, 16, 248);
+}
+
+
+/* ------------------hoadon */
+
+.HoaDon {
+    border: 0;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: block;
+}
+
+.chooseTicket {
+    width: fit-content;
+    margin-top: 20px;
+    margin-left: 15%;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+.chooseTicket .buttonww {
+    text-align: center;
+}
+
+.chooseTicket .buttonww button {
+    padding: 20px 20px;
+    width: 140px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orange;
+    color: white;
+    border: 1px solid white;
+}
+
+.chooseTicket button:hover {
+    background-color: aquamarine;
+    color: #f30a7a;
+}
+
+.chooseTicket th {
+    font-size: 25px;
+}
+
+.chooseTicket tr {
+    margin-top: 5px;
+    background-color: rgba(12, 140, 12, 0.64);
+}
+
+.chooseTicket thead th {
+    font-size: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 76px;
+}
+
+.chonGhe {
+    border: 0;
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+    margin-top: 40px;
+    display: none;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.chonGhe p {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.selected {
+    color: rgb(13, 0, 255);
+}
+
+.buttonw {
+    text-align: center;
+}
+
+.buttonw button {
+    padding: 20px 20px;
+    width: 140px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orange;
+    color: white;
+    border: 1px solid white;
+}
+
+.buttonw button:hover {
+    background-color: aquamarine;
+    color: #f30a7a;
+}
+
+.GheDoi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.GheDoi p {
+    width: 80px;
+    text-align: center;
+    background-color: darkkhaki;
+}
+
+.GheDoi p:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+
+/* phim */
+
+.movie-main {
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+    padding-left: 5%;
+}
+
+.movie-main img {
+    width: 300px;
+    height: 460px;
+}
+
+.movie-of-day {
+    display: inline-block;
+    width: 43%;
+    height: fit-content;
+    background-color: rgb(211, 87, 10);
+    padding: 20px 12px;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 12px;
+    /* Add margin between the elements */
+}
+
+.movie-of-day div img {
+    border: 5px solid #f2c08f;
+    width: 70%;
+}
+
+.movie-of-day p,
+.movie-of-day h1 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.over-detail {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    height: 170px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+.over-detail::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px dashed white;
+    position: absolute;
+    bottom: 0;
+}
+
+.but {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.but button:first-child {
+    border-radius: 0 30px 30px 30px;
+    padding: 10px 28px;
+    background-color: rgba(43, 43, 44, 0.548);
+    margin-left: -40px;
+}
+
+.but button a h2 {
+    padding-right: 12px;
+}
+
+.but button:first-child:hover {
+    background-color: #333;
+}
+
+.but button:last-child {
+    border-radius: 30px 0 30px 30px;
+    padding: 10px 28px;
+    background-color: #c90b68;
+    margin-right: 22px;
+}
+
+.but button:last-child:hover {
+    background-color: rgb(247, 173, 0);
+}
+
+.but h2,
+a {
+    color: white;
+}
+
+.border-mo {
+    width: 90%;
+}
+
+
+/* phan sua trang chu */
+
+.movie-item_n_2d_hide {
+    position: relative;
+    display: block;
+}
+
+.dis-detail {
+    border: 0;
+    color: white;
+    width: 220px;
+    padding: 3px 10px;
+    height: 368px;
+    background-color: #232323d0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    /* Bắt đầu với opacity 0 */
+    transition: opacity 0.3s;
+    /* Thêm hiệu ứng transition */
+}
+
+.dis-detail a,
+.dis-detail p {
+    margin-top: 10px;
+}
+
+.dis-detail a p {
+    position: absolute;
+    bottom: 100px;
+    border: 0;
+    width: fit-content;
+    background-color: #eb1c6f;
+    padding: 10px 10px;
+    border-radius: 20px 20px;
+    right: 96px;
+}
+
+.dis-detail p:last-child:hover {
+    background-color: #f18720;
+}
+
+.dis-detail h3:hover {
+    background-color: #f18720;
+}
+
+.dis-detail h3 {
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+    border: 0;
+    width: fit-content;
+    background-color: #eb1c6f;
+    padding: 10px 10px;
+    border-radius: 20px 20px;
+}
+
+.movie-item_n_2d_hide:hover .dis-detail {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    opacity: 1;
+}
+
+.movie-pic:hover .dis-detail {
+    opacity: 1;
+    /* Khi hover, opacity sẽ chuyển sang 1 */
+}
+
+
+/* ------------xem them------------ */
+
+.view-more:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: auto;
+    border-top: 1px dotted #666;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.xem_them {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 10px 25px;
+    background-color: #e00d7a;
+    border-radius: 30px 30px 30px 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    z-index: 1;
+    top: 100px;
+    left: 44%;
+}
+
+
+/* --------------lien he----------------- */
+
+.bg-cover {
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    overflow: hidden;
+    background-attachment: scroll;
+    z-index: 0;
+}
+
+.content-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.recruitment-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center top;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.recruitment-wrap p {
+    padding-bottom: 30px;
+}
+
+
+/* 
+---------------- quang cao --------------*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+.modal-content {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content img {
+    width: 500px;
+    height: 500px;
+}
+
+.close {
+    position: absolute;
+    top: -25px;
+    right: -20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 5px 12px;
+}
+
+.close:hover {
+    background-color: #0074cc;
+}
+
+h1 {
+    text-align: center;
+}
+
+#GheDon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+    margin: auto;
+    /* Thêm dòng này để căn chỉnh container ra giữa */
+}
+
+.seat {
+    margin: 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.chonGhe label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.chonGhe input[type="checkbox"]:checked+label {
+    background-color: #000;
+    color: #fff;
+}
+
+.GheRandom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    /* Thêm dòng này để căn chỉnh container ra giữa */
+}
+
+.GheRandom label {
+    background-color: yellow;
+    width: 100px;
+    height: 50px;
+}
+
+.GheDoi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    /* Thêm dòng này để căn chỉnh container ra giữa */
+}
+
+.GheDoi label {
+    background-color: violet;
+    width: 100px;
+    height: 50px;
+}
+
+.GheDoi button {
+    margin-top: auto;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(255, 0, 85, 0.29);
+}
+
+.Thanhtoan {
+    display: none;
+    width: 50%;
+    height: fit-content;
+    background-color: blueviolet;
+    z-index: 1;
+    margin: auto;
+    top: 40%;
+    text-align: center;
+    font-size: xx-large;
+}

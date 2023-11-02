@@ -1,0 +1,11 @@
+.slide-wrapper{
+    width: 5600px; 
+    left: 0px; 
+    display: flex; 
+    margin-left: 0px; 
+    transform: translate3d(-400px, 0px, 0px);
+}
+.bo-to{
+    position: relative;
+    top: 100%;
+}
